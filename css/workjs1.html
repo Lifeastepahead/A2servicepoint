@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>workjs1</title>
+        <style></style>
+        <script>
+            function fun()
+            {
+                var a=[];
+                a[0]=10;
+                a[1]=20;
+                a[2]=30
+            var a=[]
+            document.getElementById("a1").innerHTML=a;
+            document.getElementById("a2").innerHTML=a[2];
+            document.getElementById("a3").innerHTML=a.length;
+            a[a.length]=60;
+            document.getElementById("a4").innerHTML("a4").innerHTML=a;
+            a.pop();
+            document.getElementById("a5").innerHTML=a;
+            a.push("70");
+            document.getElementById("a6").innerHTML=a;
+            document.getElementById("a7").innerHTML=b;
+            for(var i=0; i<a.length; i++)
+            {
+                alert(a[i]);
+                b.push(a[i]);
+            }
+            document.getElementById("a8").innerHTML=b;
+            }
+            </script>
+    </head>
+    <body>
+        <input type="button" value="array" onclick="fun()">
+        <p>Array value is:<b id="a1"></b></p>
+        <p>array 3rd position value is:<b id="a2"></b></p>
+        <p>array length is:<b id="a3"></b></p>
+        <p>array after add is:<b id="a4"></b></p>
+        <p>array after pop is:<b id="a5"></b></p>
+        <p>array after push is:<b id="a6"></b></p>
+        <p>array before copy is:<b id="a7"></b></p>
+        <p>array after copy is:<b id="a8"></b></p>
+        <input type="button" value="enter" onclick="fun()"
+    </body>

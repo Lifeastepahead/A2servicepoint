@@ -1,0 +1,126 @@
+      #aaa{
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            text-indent: 30px;
+            margin-top: 50px;
+            padding-right:25px;
+        }
+        #bbb{
+            text-align: center;
+            padding-top: 30px;
+            font-weight: 600;
+        }
+        #bbb:hover{
+            color: orangered;
+        }
+        ul li{
+            margin-left: 40px;
+            font-size: 25px;
+        }
+        #abc{
+            height: 100px;
+            width: 115px;
+        }
+        .a2{
+            height: 10%;
+            width: 100%;
+            background-color: rgb(247, 244, 244);
+            position: relative;
+            position: fixed;
+        }
+        .a2 img{
+            height: 50%;
+            width: 3%;
+            border-radius: 50%;
+            margin-left: 30px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 0px 0px black ;
+            
+        }
+        .a2 b{
+            color: #f57300;
+            padding-left: 10px;
+            font-size: 30px;
+            margin-top: 50px;
+        }
+        .a2 ul li{
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 8px;
+            margin-top: 10px;
+           
+        }
+        .a2 ul{
+            float: right;
+        }
+        .a2 ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-family:Font Awesome 5 Free;
+           padding-right: 20px;
+        }
+        .a2 ul li a:hover{
+            color: #f57300;
+        }
+        input[type=button]{
+            border-radius:20px;
+            background-color: #f57300;
+            color: white;
+            margin-right: 30px;
+            font-size: 15px;
+            height: 40px;
+            width: 120px;
+            border: none;   
+        }
+        .row3{
+            height: 90%;
+            width: 90%;
+            background-color: white;
+            box-shadow: 1px 1px 2px 2px gray;
+            margin-left: 80px;
+            border-radius: 20px;
+            margin-top:20px;
+            margin-bottom: 20px;
+        }
+        .col2{
+            float: left;
+            width: 50%;
+        }
+        #b2{
+            font-size: 18px;
+            color: black;
+        }
+      #event{
+        width: 80% ;
+        height: 60%;
+        margin-left: 40px;
+        margin-top: 150px;
+        border-radius: 20px;
+      }
+      @media screen and (max-width:900px)
+      {
+        .a1{
+            height: auto;
+        }
+        .a2{
+            height: auto;
+        }
+        .row3{
+            height: auto;
+            padding-bottom: 5%;
+          
+        }
+        .col2
+        {
+            width: 90%;
+           
+        }
+       #aaa{
+        color: white;
+       }
+       #b2{
+        color: white;
+       }
+      }
