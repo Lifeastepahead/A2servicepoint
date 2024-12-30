@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="icon" type="image/png" href="img/A2 LOGO.jpg">
+        
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .aa{
+                width: 80%;
+                height: 67%;
+                background-color: #f57300;
+                padding: 10%;
+                padding-top: 5%;
+                
+            }
+            .bb
+            {
+                width: 80%;
+                height: 90%;
+                background-color: white;
+                padding: 10%;
+                box-shadow: 2px 2px 8px 4px gray;
+                border-radius: 20px;
+                padding-top: 1%;
+                
+            }
+            .row
+            {
+                width: 100%;
+                height: 100%;
+            }
+            .row::after
+            {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .col
+            {
+                float: left;
+                width: 45%;
+                height: 90%;
+                padding: 2%;
+                text-align: center;
+
+            }
+            .col h2{
+                font-family: monospace;
+                text-transform: uppercase;
+                font-size: 28px;
+                font-weight: 900;
+                color: gray;
+                
+            }
+            .col h2 b{
+                color: #f57300;
+            }
+            .col input[type="text"], .col input[type="password"]
+            {
+                width: 280px;
+                height: 40px;
+                text-align: center;
+                border: 2px solid gray;
+                border-radius: 10px;
+            }
+            .col input[type="text"]:hover, .col input[type="password"]:hover{
+                border: 2px solid #f57300;
+            }
+            .col input[type="checkbox"]
+            {
+                float: left;
+                margin-left: 60px;
+            }
+            .col strong{
+                color: black;
+                font-size: 14px;
+                font-family: monospace;
+                text-align: left;
+                float: left;
+                font-weight: 100;
+            }
+            .col input[type="button"],.col input[type="reset"]{
+                height: 40px;
+                width: 138px;
+                border: 2px solid gray;
+                background-color: #f57300;
+                color: white;
+                font-weight: 900;
+                border-radius: 15px;
+
+            }
+            .col input[type="button"]:hover,.col input[type="reset"]:hover{
+                background-color: green;
+            }
+            @media screen and (max-width:900px)
+            {
+                .aa
+                {
+                    height: auto;
+                    padding: 0%;
+                    padding-bottom: 40px;
+                    width: 100%;
+                   
+                }
+                .bb{
+                    height: auto;
+                   
+                    padding-bottom: 40px;
+                }
+                .row
+                {
+                    height: auto;
+                }
+           .col{
+            width: 80%;
+            margin: 10%;
+           }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="aa">
+            <div class="bb">
+                <div class="row">
+                    <div class="col" style="padding-top: 5%;">
+                        <img src="img/blue-logo.png" id="v" height="100%" width="90%">
+                    </div>
+                    <div class="col">
+                        <img src="img/A2 LOGO.jpg"height="60px"width="60px" style="margin-top: 3%;border-radius: 50%;">
+                        <h2>Log<b>in</b></h2><br>
+                        <input type="text" id="a" name="a" placeholder="Username"><br><br>
+                        <input type="password" id="b" name="b" placeholder="Password"><br><br>
+                        <input type="checkbox"id="c" name="c" value="yes"> <strong>Remember me</strong>
+                        <a href="#">Forget password ? </a><br><br>
+                        <input type="button" value="LOGIN"> <input type="reset" value="Reset"><br><br>
+                        <a href="register.html" style="text-decoration: none;font-weight: 900; color: blue;">Register now </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="utf-8">
+        <title>A2 service point</title>
+        <link rel="icon" type="image/png" href="img/A2 LOGO.jpg">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="contact.html" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="tel:8778744633" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>8778744633</a>
+                        <a href="mailto:a2servicepoint@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>a2servicepoint2021@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="register.html"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="login.html"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    
+                    <h1 class="text-primary"><img src="img/A2 LOGO.jpg" style="border-radius:50%">A2 Service Point</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link ">About</a>
+                        <a href="service.html" class="nav-item nav-link active">Services</a>
+                        <a href="blog.html" class="nav-item nav-link">Blogs</a>
+                        <!--<div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Pages</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Our Features</a>
+                                <a href="team.html" class="dropdown-item">Our team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="offer.html" class="dropdown-item">Our offer</a>
+                                <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>-->
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="register 1.html" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0" id="get">Get Started</a>
+                </div>
+            </nav>
+
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Services</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index1.html">Home</a></li>
+                        <!--<li class="breadcrumb-item"><a href="p">Pages</a></li>-->
+                
+                        <li class="breadcrumb-item"><a href="service.html">Service</a></li>
+
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar &
+ <!-- 
+ <div class="header-carousel owl-carousel">
+    <div class="header-carousel-item">
+        <img src="img/a2 1.jpg" class="img-fluid w-100" alt="Image">
+        <div class="carousel-caption">
+            <div class="container">
+                <div class="row gy-0 gx-5">
+                    <div class="col-lg-0 col-xl-5"></div>
+                    <div class="col-xl-7 animated fadeInLeft">
+                        <div class="text-sm-center text-md-end">
+                            <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To A2 Service</h4>
+                            <h1 class="display-4 text-uppercase text-white mb-4">TO CREATE A CUSTOM SOLUTION BASED ON NEEDS</h1>
+                            <p class="mb-5 fs-5">Mobile|Laptop|Printer|CCTT</p>
+                            <p>SERVICES</p>
+                            <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                <h2 class="text-white me-2">Follow Us:</h2>
+                                <div class="d-flex justify-content-end ms-2">
+                                    <a class="btn btn-md-square btn-light rounded-circle me-2" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-md-square btn-light rounded-circle mx-2" href="https://www.youtube.com/@LIFE_A_STEP_AHEAD"><i class="fa-brands fa-square-youtube"></i></a>
+                                    <a class="btn btn-md-square btn-light rounded-circle mx-2" href="https://www.instagram.com/life.astepahead/"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-carousel-item">
+        <img src="img/a2 2.jpg" class="img-fluid w-100" alt="Image">
+        <div class="carousel-caption">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-12 animated fadeInUp">
+                        <div class="text-center">
+                            <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To A2 Service</h4>
+                            <h1 class="display-4 text-uppercase text-white mb-4">TO CREATE A CUSTOM SOLUTION BASED ON NEEDS</h1>
+                            <p class="mb-5 fs-5">Mobile|Laptop|Printer|CCTV
+                            </p>
+                            <p>SERVICES</p>
+                            <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                                <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href=""><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <h2 class="text-white me-2">Follow Us:</h2>
+                                <div class="d-flex justify-content-end ms-2">
+                                    <a class="btn btn-md-square btn-light rounded-circle me-2" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-md-square btn-light rounded-circle mx-2" href="https://www.youtube.com/@LIFE_A_STEP_AHEAD"><i class="fa-brands fa-square-youtube"></i></a>
+                                    <a class="btn btn-md-square btn-light rounded-circle mx-2" href="https://www.instagram.com/life.astepahead/"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+<!-- Navbar & Hero End -->
+
+
+<!-- 
+<div class="container-fluid about py-5">
+<div class="container py-5">
+    <div class="row g-5 align-items-center">
+        <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+            <div>
+                <h4 class="text-primary">About Us</h4>
+                <h1 class="display-5 mb-4">"your needs, Our Priority"</h1>
+                <p class="mb-4">"A2 empowers your growth,personally and professionally.Expert solutions,Efficient Services".
+                </p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                        <div class="d-flex">
+                            <div><i class="fas fa-lightbulb fa-3x text-primary"></i></div>
+                            <div class="ms-4">
+                                <h4>Business Consuluting</h4>
+                                <p>"Vision and mission development"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                        <div class="d-flex">
+                            <div><i class="bi bi-bookmark-heart-fill fa-3x text-primary"></i></div>
+                            <div class="ms-4">
+                                <h4>Year Of Expertise</h4>
+                                <p>Six years of experience in the field of service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="https://www.instagram.com/a2_service_point/" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">JOIN NOW</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex">
+                            <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p class="mb-0 fs-5" style="letter-spacing: 1px;">+918760207083</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="bg-primary rounded position-relative overflow-hidden">
+                <img src="img/mobile service.jpg" class="img-fluid rounded w-100" alt="">
+                <div class="rounded-bottom">
+                    <img src="img/cctv .webp" class="img-fluid rounded-bottom w-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+-->
+
+<!-- Services Start -->
+ <br><br><br><br><br>
+<div class="container-fluid service pb-5">
+<div class="container pb-5">
+    <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Our Services</h4>
+        <h1 class="display-5 mb-4" style="color: black;">We provide service in best offer</h1>
+        <p class="mb-0">"A2 Services point is a versatile service provider catering to diverse needs. Our expertise spans education,technology,and skill development,ensuring seamless solution for individuals and institutions".
+        </p>
+    </div>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="img/digital.avif" class="img-fluid rounded-top w-100" alt="Image">
+                </div>
+                <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4"> DIGITAL MARKETING</a>
+                    <p class="mb-4">We are providing solutions to all your digital marketing needs with experience of 6 years .A digital marketing course teaches students how to use digital strategies and technologies to promote a business online. Digital marketing is the process of using digital devices and other technologies to promote a product or service. It can include email, social media, search engines, mobile apps, and text and multimedia messages.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="login.html">Join Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="img/WEB DESING.webp" class="img-fluid rounded-top w-100" alt="Image">
+                </div>
+                <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">WEB design & DEVELOPMENT</a>
+                    <p class="mb-4">Web design courses teach students how to create websites by designing the visual elements and layout, and using coding languages like HTML, CSS, and JavaScript to translate the designs into a functional website. Web design courses are available at various levels, including diploma, certificate, undergraduate, and postgraduate. We provide web deisgn service also.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="login.html">Join Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="img/LAB.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                </div>
+                <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">LAB SETUP & MAINTENANCE</a>
+                    <p class="mb-4">We are a leading provider of turnkey solutions for computer hardware laboratories. With years of expertise and a deep understanding of computer technology,we are commited to helping our clients harness the full potential of innovation.
+
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="login.html">Join Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="img/security.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                </div>
+                <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">SECURITY & BIOMETRIC SYSTEM</a>
+                    <p class="mb-4">Our installers carefully select, place and integrate every security system component to ensure smooth operation and compatibility.This  assures the security camera system operates as instead to reduce security risks. WE have years of experience in planning,customizing and installing comprehensive CCTv systems.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="login.html">Join Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="img/communication.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                </div>
+                <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">COMMUNICATION MATERIALS</a>
+                    <p class="mb-4">School magazines are an important medium of communication at educational institutions.A good school magazine enables students to express themselves,showcase the talents of students and faculty,provide valuable information about school events and build a strong sense of community among students,faculty and parents.
+                        Creating a good school magazine requires meticulous planning,thoughtful strategizing, and skilful execution.                            
+                    </p>
+                    
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="login.html">Join Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="img/EVENT.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                </div>
+                <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">EVENT MANAGEMENT</a>
+                    <p class="mb-4">Organizing a school event can be a rewarding yet challenging task, requiring meticulous planning and execution. Whether it’s fundraiser, a cultural festival,Annual day or a sports day, a well-organized event can leave a lasting positive impression on students,parents, and the community.We help you with planning and managing the event and help with a range of services, including budget management,vendor coordination,and marketing.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="login.html">Join Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="img/school managementt.png" class="img-fluid rounded-top w-100" alt="Image">
+                </div>
+                <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">SCHOOL SOFTWARES</a>
+                    <p class="mb-4">Our innovative school software designed to simplify administrative tasks,enhance classroom collaboration and improve student outcome.With features like attendance tracking, grade management,lesson planning and parents teacher communication.Our platform offers a comprehensive  solution for schools of all sizes.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="login.html">Join Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="img/school event.jpeg" class="img-fluid rounded-top w-100" alt="Image">
+                </div>
+                <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">SCHOOL EVENT MANAGEMENT</a>
+                    <p class="mb-4">We help you with planning and managing the event and help with a range of services, including budget management, vendor coordination, and marketing.Event management system can also help with event planning.These systems can automate tasks,provide real-time updates, and offer insights through data analytics.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="login.html">Join Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="img/teacher.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                </div>
+                <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">CAPACITY BUILDING PROGRAMME FOR TEACHERS</a>
+                    <p class="mb-4"> Our programs focus on fostering creativity,collaboration and adaptability ensuring teachers can meet the diverse needs of their classroom through workshops,training sessions and continue support we aim to build a community of confident,skilled and innovative educators who drive lasting impact in education.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="login.html">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Services End -->
+
+<!-- 
+<div class="container-fluid feature pb-5">
+<div class="container pb-5">
+    <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Our Features</h4>
+        <h1 class="display-5 mb-4">Networking and Networthing</h1>
+        <p class="mb-0">"A2 Services point is a versatile service provider catering to diverse needs. Our expertise spans education,technology,and skill development,ensuring seamless solution for individuals and institutions".
+        </p>
+    </div>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="feature-item p-4">
+                <div class="feature-icon p-4 mb-4">
+                    <i class="fas fa-chart-line fa-4x text-primary"></i>
+                </div>
+                <h4>WEB DESIGN & DEVELOPMENT SERVICES</h4>
+                <p class="mb-4">Our website design and development services provide a seamless and engaging online presence for your business and services.
+                </p>
+                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="feature-item p-4">
+                <div class="feature-icon p-4 mb-4">
+                    <i class="fas fa-university fa-4x text-primary"></i>
+                </div>
+                <h4>DIGITAL MARKETING SERVICES AND SOLUTIONS</h4>
+                <p class="mb-4">We are providing solution to all your digital marketing needs with experience of 6 years, and a team of experienced digital marketing services for your businesses.
+                </p>
+                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="feature-item p-4">
+                <div class="feature-icon p-4 mb-4">
+                    <i class="fas fa-file-alt fa-4x text-primary"></i>
+                </div>
+                <h4>Skill development</h4>
+                <p class="mb-4">Our company prioritize skill development training.online platforms provide accessible skill development resourses.
+
+
+                </p>
+                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="feature-item p-4">
+                <div class="feature-icon p-4 mb-4">
+                    <i class="fas fa-hand-holding-usd fa-4x text-primary"></i>
+                </div>
+                <h4>Service center</h4>
+                <p class="mb-4">Our service center offers sales and repair services for laptops,mobile,CCTV and electrical appliences online and offline.
+                </p>
+                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ Features End -->
+
+
+<!-- 
+<div class="container-fluid offer-section pb-5">
+<div class="container pb-5">
+    <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Our Offer</h4>
+        <h1 class="display-5 mb-4">SERVICES</h1>
+        <p class="mb-0">"A2 empowers your growth,personally and professionally.Expert solutions,Efficient Services".
+
+
+        </p>
+    </div>
+    <div class="row g-5 align-items-center">
+        <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="nav nav-pills bg-light rounded p-5">
+                <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
+                    <h5 class="mb-0">MOBILE SERVICE</h5>
+                </a>
+                <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
+                    <h5 class="mb-0">LAPTOP SERVICE</h5>
+                </a>
+                <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
+                    <h5 class="mb-0">PRINTER SERVICE</h5>
+                </a>
+                <a class="accordion-link p-4 mb-0" data-bs-toggle="pill" href="#collapseFour">
+                    <h5 class="mb-0">CCTV SERVICE</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+            <div class="tab-content">
+                <div id="collapseOne" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <img src="img/rep-mobile.png" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-5">
+                            <h1 class="display-5 mb-4">TO CREATE A CUSTOM SOLUTION BASED ON NEEDS</h1>
+                            <p class="mb-4">A2 Services point is a versatile service provider catering to diverse needs. Our expertise spans education,technology,and skill development,ensuring seamless solution for individuals and institutions
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="learn-1.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseTwo" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <img src="img/laptop-services.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-5">
+                            <h1 class="display-5 mb-4">TO CREATE A CUSTOM SOLUTION BASED ON NEEDS</h1>
+                            <p class="mb-4">A2 Services point is a versatile service provider catering to diverse needs. Our expertise spans education,technology,and skill development,ensuring seamless solution for individuals and institutions
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="learn-2.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseThree" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <img src="img/printer-service.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-5">
+                            <h1 class="display-5 mb-4">TO CREATE A CUSTOM SOLUTION BASED ON NEEDS</h1>
+                            <p class="mb-4">A2 Services point is a versatile service provider catering to diverse needs. Our expertise spans education,technology,and skill development,ensuring seamless solution for individuals and institutions
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="learn-3.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseFour" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <img src="img/cctv-camera.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-5">
+                            <h1 class="display-5 mb-4">TO CREATE A CUSTOM SOLUTION BASED ON NEEDSt</h1>
+                            <p class="mb-4">A2 Services point is a versatile service provider catering to diverse needs. Our expertise spans education,technology,and skill development,ensuring seamless solution for individuals and institutions
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="learn-1.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- 
+<div class="container-fluid blog pb-5">
+<div class="container pb-5">
+    <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Our Sales & Service</h4>
+        <h1 class="display-5 mb-4">Trends, Challenges and Opportunities</h1>
+        <p class="mb-0">Best Quality Electronic Products Sales
+        </p>
+    </div>
+    <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+        <div class="blog-item p-4">
+            <div class="blog-img mb-4">
+                <img src="img/mobile.png" class="img-fluid w-100 rounded" alt="">
+                <div class="blog-title">
+                    <a href="#" class="btn">Mobile Sales</a>
+                </div>
+            </div>
+            <a href="" class="h4 d-inline-block mb-3">what about mobile phone?</a>
+            <p class="mb-4">Mobile sales services should be optimized for mobile devices with a user-friendly interface and easy navigation.
+            </p>
+            
+        </div>
+        <div class="blog-item p-4">
+            <div class="blog-img mb-4">
+                <img src="img/lap.png" class="img-fluid w-100 rounded" alt="">
+                <div class="blog-title">
+                    <a href="#" class="btn">Laptop Sales</a>
+                </div>
+            </div>
+            <a href="#" class="h4 d-inline-block mb-3">What about laptop?</a>
+            <p class="mb-4">A laptop is a portable computer that's designed to be used on your lap and is smaller than a desktop computer. Laptops are battery-powered and can be used for a variety of tasks, such as browsing the internet, creating documents, and playing games.
+            </p>
+            
+        </div>
+        <div class="blog-item p-4">
+            <div class="blog-img mb-4">
+                <img src="img/printer-sales.png" class="img-fluid w-100 rounded" alt="">
+                <div class="blog-title">
+                    <a href="#" class="btn">Printer Sales</a>
+                </div>
+            </div>
+            <a href="#" class="h4 d-inline-block mb-3">What about printers?</a>
+            <p class="mb-4">A printer is a device that transfers text and images from a computer to a medium like paper or film. Printers can be connected to a computer directly or through a network. They come in different types, including inkjet, laser, thermal, and 3D printers. 
+            </p>
+            
+        </div>
+        <div class="blog-item p-4">
+            <div class="blog-img mb-4">
+                <img src="img/cctv sales.jpg" class="img-fluid w-100 rounded" alt="">
+                <div class="blog-title">
+                    <a href="#" class="btn">CCTN</a>
+                </div>
+            </div>
+            <a href="" class="h4 d-inline-block mb-3">What about CCTV?</a>
+            <p class="mb-4">Closed-circuit television (CCTV) is a video surveillance technology that uses cameras to transmit signals to a limited number of monitors. CCTV is used for a variety of purposes, including
+            </p>
+            
+        </div>
+    </div>
+</div>
+</div>
+ -->
+
+<!--
+<!--
+<div class="container-fluid faq-section pb-5">
+<div class="container pb-5 overflow-hidden">
+    <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+    
+        <h1 class="display-5 mb-4">All Products</h1>
+        <p class="mb-0">Category
+        </p>
+    </div>
+    <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="accordion accordion-flush bg-light rounded p-5" id="accordionFlushSection">
+                <div class="accordion-item rounded-top">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Bluetooth Headphones
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushSection">
+                        <div class="accordion-body">Stating price from <code>300rupees</code></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            bluetooth speaker
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushSection">
+                        <div class="accordion-body">Stating price from <code>400rupees</code></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Smart Watch
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushSection">
+                        <div class="accordion-body">Stating price from <code>1200rupees</code></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        power Bank
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushSection">
+                        <div class="accordion-body">Stating price from <code>1000rupees</code></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        keyboard
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushSection">
+                        <div class="accordion-body">Stating price from <code>400rupees</code></div>
+                    </div>
+                </div>
+                <div class="accordion-item rounded-bottom">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                         Mouse
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushSection">
+                        <div class="accordion-body">Stating price from <code>250rupees</code></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="bg-primary rounded">
+                <img src="img/all products.jpg" class="img-fluid w-100" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</div>-->
+<!-- 
+<div class="container-fluid testimonial pb-5">
+<div class="container pb-5">
+    <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Testimonial</h4>
+        <h1 class="display-5 mb-4">Our Customer Riviews</h1>
+        <p class="mb-0">A2 Service Point is a top-notch destination for all your computer and phone service needs. I highly recommend them for their outstanding service, expertise, and value.
+
+        </p>
+    </div>
+    <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+        <div class="testimonial-item">
+            <div class="testimonial-quote-left">
+                <i class="fas fa-quote-left fa-2x"></i>
+            </div>
+            <div class="testimonial-img">
+                <img src="img/person.webp" class="img-fluid" alt="Image">
+            </div>
+            <div class="testimonial-text">
+                <p class="mb-0">I'm thoroughly impressed with the exceptional service I received at A2 Service Point! The staff were friendly, knowledgeable, and efficient in diagnosing and resolving my computer issue.
+                </p>
+            </div>
+            <div class="testimonial-title">
+                <div>
+                    <h4 class="mb-0">Person Name</h4>
+                    <p class="mb-0">Ackshaya</p>
+                </div>
+                <div class="d-flex text-primary">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-quote-right">
+                <i class="fas fa-quote-right fa-2x"></i>
+            </div>
+        </div>
+        <div class="testimonial-item">
+            <div class="testimonial-quote-left">
+                <i class="fas fa-quote-left fa-2x"></i>
+            </div>
+            <div class="testimonial-img">
+                <img src="img/person.webp" class="img-fluid" alt="Image">
+            </div>
+            <div class="testimonial-text">
+                <p class="mb-0">"I was blown away by the exceptional service I received at A2 Service Point! The technicians were knowledgeable, efficient, and friendly. They fixed my laptop in no time, and the price was very reasonable. I highly recommend A2 Service Point to anyone in need of computer or phone repairs."
+
+                </p>
+            </div>
+            <div class="testimonial-title">
+                <div>
+                    <h4 class="mb-0">Person Name</h4>
+                    <p class="mb-0">Rinthiya</p>
+                </div>
+                <div class="d-flex text-primary">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-quote-right">
+                <i class="fas fa-quote-right fa-2x"></i>
+            </div>
+        </div>
+        <div class="testimonial-item">
+            <div class="testimonial-quote-left">
+                <i class="fas fa-quote-left fa-2x"></i>
+            </div>
+            <div class="testimonial-img">
+                <img src="img/person.webp" class="img-fluid" alt="Image">
+            </div>
+            <div class="testimonial-text">
+                <p class="mb-0">"I took my phone to A2 Service Point after it stopped charging. The staff were very helpful and diagnosed the problem quickly. They replaced the charging port and had my phone working again in no time. The only reason I didn't give them 5 stars is that they didn't have any loaner phones available while mine was being repaired."
+
+                </p>
+            </div>
+            <div class="testimonial-title">
+                <div>
+                    <h4 class="mb-0">Person Name</h4>
+                    <p class="mb-0">Veeramani</p>
+                </div>
+                <div class="d-flex text-primary">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-quote-right">
+                <i class="fas fa-quote-right fa-2x"></i>
+            </div>
+        </div>
+        <div class="testimonial-item">
+            <div class="testimonial-quote-left">
+                <i class="fas fa-quote-left fa-2x"></i>
+            </div>
+            <div class="testimonial-img">
+                <img src="img/kakashi.jpg" class="img-fluid" alt="Image">
+            </div>
+            <div class="testimonial-text">
+                <p class="mb-0">"A2 Service Point exceeded my expectations! Their expert technicians fixed my phone's screen quickly and efficiently. Highly recommended for reliable and affordable repairs!" 5/5 stars
+                </p>
+            </div>
+            <div class="testimonial-title">
+                <div>
+                    <h4 class="mb-0">Person Name</h4>
+                    <p class="mb-0">Matheshwar</p>
+                </div>
+                <div class="d-flex text-primary">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-quote-right">
+                <i class="fas fa-quote-right fa-2x"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+-->
+<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="footer-item">
+                    <a href="index.html" class="p-0">
+                        <h4 class="text-white">A2 Service Point</h4>
+                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                    </a>
+                    <p class="mb-4">The development of advanced diagnostic tools and software is enabling electronic service providers to quickly and accurately identify faults and repair devices...</p>
+                    <div class="d-flex">
+                        <a href="#" class="">
+                            <i class=""></i>
+                            <div class="ms-3">
+                               
+                                <h6 class="text-white"></h6>
+                            </div>
+                        </a>
+                        <a href="#" class="">
+                            <i class=""></i>
+                            <div class="ms-3">
+                                <small class="text-white"><img src="img/A2 LOGO.jpg"height="140px" width="145px"style="border-radius:50%;"></small>
+                                <h6 class="text-white"></h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-2">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                    <a href="service.html"><i class="fas fa-angle-right me-2"></i> Service</a>
+                   <!-- <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>-->
+                    <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4">Contact info</h4>
+                    <p>#31/3,Sannathi street,<br>First floor,vairam complex,<br>Jayankondam,Ariyalur-Dt.<br>Pin-621802</p>
+                   
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4">Social media</h4>
+                    <table>
+                        <tr><td><i class="fa-solid fa-envelope" id="ma"></i></td><td><p>  a2servicepoint2021@gmail.com</p></td></tr>
+                        <tr><td><i class="fa-solid fa-phone" id="ma"></i></td><td><p>  Ph no : +918778744633</p></td></tr>
+                    </table>
+                    
+                    <p></p>
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.facebook.com/profile.php?id=61564713848888"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.youtube.com/@LIFE_A_STEP_AHEAD"><i class="fa-brands fa-youtube text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.instagram.com/life.astepahead/"><i class="fab fa-instagram text-white"></i></a>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-md-0">
+                <span class="text-body"><a href="index.html" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>A2_service_point</a>, All right reserved.</span>
+            </div>
+            <div class="col-md-6 text-center text-md-end text-body">
+                <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                Designed By <a class="border-bottom text-white" href="https://lifeastepahead.github.io/lifeastepahead.in/">LIFE DEVELOPER</a> Distributed By <a class="border-bottom text-white" href="index.html">@A2servicepoint2025</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="utf-8">
+        <title>A2 SERVICE POINT</title>
+        <link rel="icon" type="image/png" href="img/A2 LOGO.jpg">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="contact.html" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="tel:+098778744633" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+918778744633</a>
+                        <a href="mailto:a2servicepoint2021@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>a2servicepoint2021@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="register.html"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="login.html"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"><img src="img/A2 LOGO.jpg"height="80px"width="60px"style="border-radius:50%;">A2 Service Point</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="blog.html" class="nav-item nav-link active">Blogs</a>
+                        <!--<div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Pages</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Our Features</a>
+                                <a href="team.html" class="dropdown-item">Our team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="offer.html" class="dropdown-item">Our offer</a>
+                                <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>-->
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="register 1.html" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0" id="get">Get Started</a>
+                </div>
+            </nav>
+
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Blog</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index1.html">Home</a></li>
+                        <!--<li class="breadcrumb-item"><a href="#">Pages</a></li>-->
+                        <li class="breadcrumb-item active text-primary">Blog</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Blog & News</h4>
+                    <h1 class="display-5 mb-4">Trends, Challenges and Opportunities</h1>
+                    <p class="mb-0">"Expert service works for your service needs"</p>
+                </div>
+                <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/school event 2.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">School Event</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">What is School Event?</a>
+                        <p class="mb-4">School events can be a chance for students to learn new skills, celebrate diversity, and strengthen the school community.They include things like sports, music, drama, and activity clubs that students participate in outside of their regular school subjects. They are designed to support what students learn in class and help them develop new skills. </p>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <h5></h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/electro lab1.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Electronic Services</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">What is Electronic Services?</a>
+                        <p class="mb-4">Electronic services or e-services are services that make use of information and communication technologies (ICTs).Examples of electronic devices include computers, mobile devices, and smart televisions. These devices use electrical energy to perform their functions.</p>
+                        <div class="d-flex align-items-center">
+                           
+                            <div class="ms-3">
+                                <h5></h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/school magazine1.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">School-Magazine </a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">What is School Magazine?</a>
+                        <p class="mb-4">Laptop sales service can provide after-sales support including maintanance and repairing services.Your pupil magazine will provide your students with a variety of opportunities to explore different genres, and ensure their work is read by an actual audience. Give your pupils an understanding of appropriate grammar and punctuation, and help them to use this in practice.</p>
+                        <div class="d-flex align-items-center">
+                          
+                            <div class="ms-3">
+                                <h5></h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/aca.achievement.avif" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Academic Achievements</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">What is Academic Achievement?</a>
+                        <p class="mb-4">Academic achievements are the accomplishments and level of success a student achieves in their education.Academic achievement is the progress a student makes towards learning educational skills, knowledge, and materials. It's a key goal of education and is often used to measure the effectiveness of schools and systems.  </p>
+                        </p>
+                        <div class="d-flex align-items-center">
+                           
+                            <div class="ms-3">
+                                <h5></h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                
+                <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/digital marketing.webp" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Digital Marketing</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">What is Digital Marketing?</a>
+                        <p class="mb-4">Digital marketing content refers to multimedia used by a company to inform or entertain an audience. While content is usually associated with the written word and comes in the form of blog posts or articles, this isn't always the case. Digital marketing helps build brand awareness and drive product sales with new or existing audiences.</p>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <h5></h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/security biometric.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Security&Bio-metric</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">What is Security&Biometric?</a>
+                        <p class="mb-4">The objective of biometric recognition by a biometric system is to make a person distinguishable from others by means of automated measurement through a specific characteristic. To achieve this, it must (in contrast from forensics) automatically recognise a living individual in real time.</p>
+                        <div class="d-flex align-items-center">
+                           
+                            <div class="ms-3">
+                                <h5></h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/software1.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">School management software services</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">What is School management software services?</a>
+                        <p class="mb-4">A collection of computer instructions, specially designed to manage the day-to-day administrative tasks of schools. School management software allow schools to digitally monitor the daily activities along with managing all the resources and information on a single platform.</p>
+                        <div class="d-flex align-items-center">
+                          
+                            <div class="ms-3">
+                                <h5></h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/capacity building.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Teachers capacity building programme</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">What is Teachers capacity building programme?</a>
+                        <p class="mb-4">Prepare teachers to facilitate change on a personal, classroom
+                            and school-level. By combining theory with practice,
+                            teachers can develop education strategies to address the
+                            changing landscape of teaching and learning, and apply
+                            innovative approaches to new contexts. By investing in the
+                            competence of teachers, we invest in the future of our
+                            children.</p>
+                        </p>
+                        <div class="d-flex align-items-center">
+                           
+                            <div class="ms-3">
+                                <h5></h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Blog End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">
+                                <h4 class="text-white">A2 Service Point</h4>
+                                <!-- <img src="img/logo.png" alt="Logo"> -->
+                            </a>
+                            <p class="mb-4">The development of advanced diagnostic tools and software is enabling electronic service providers to quickly and accurately identify faults and repair devices...</p>
+                            <div class="d-flex">
+                                <a href="#" class="">
+                                    <i class=""></i>
+                                    <div class="ms-3">
+                                       
+                                        <h6 class="text-white"></h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="">
+                                    <i class=""></i>
+                                    <div class="ms-3">
+                                        <small class="text-white"><img src="img/A2 LOGO.jpg"height="140px" width="145px"style="border-radius:50%;"></small>
+                                        <h6 class="text-white"></h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> Service</a>
+                           <!-- <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>-->
+                            <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Contact info</h4>
+                            <p>#31/3,Sannathi street,<br>First floor,vairam complex,<br>Jayankondam,Ariyalur-Dt.<br>Pin-621802</p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Social media</h4>
+                            <table>
+                                <tr><td><i class="fa-solid fa-envelope" id="ma"></i></td><td><p>  a2servicepoint2021@gmail.com</p></td></tr>
+                                <tr><td><i class="fa-solid fa-phone" id="ma"></i></td><td><p>  Ph no : +918778744633</p></td></tr>
+                            </table>
+                            
+                            <p></p>
+                            <div class="d-flex align-items-center">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.facebook.com/profile.php?id=61564713848888"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.youtube.com/@LIFE_A_STEP_AHEAD"><i class="fa-brands fa-youtube text-white"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.instagram.com/life.astepahead/"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="index.html" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>A2_service_point</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://lifeastepahead.github.io/lifeastepahead.in/">LIFE DEVELOPER</a> Distributed By <a class="border-bottom text-white" href="index.html">@A2servicepoint2025</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
