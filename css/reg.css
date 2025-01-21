@@ -1,0 +1,30 @@
+  @media screen and(max-width:900px) {
+    .ri{
+        height:80%;
+        padding-bottom: 40px;
+        padding:0;
+        width:100%;
+    }
+   
+    
+    .ya{
+        height:80%;
+        width:100%;
+        padding-bottom: 40px;
+    }
+    input[type="text"],input[type="password"]
+    {
+        height:40px;
+        width:100px;
+        margin-left: auto;
+    }
+    #aa{
+        height:40px;
+        width:80px;
+        font-size: 20px;
+    }
+    #a1{
+        height:140px;
+        width:140px;
+    }
+}
