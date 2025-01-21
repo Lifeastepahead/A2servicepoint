@@ -1,7 +1,9 @@
-<html>
+ <html>
     <head>
         <title>Register</title>
         <link rel="icon" type="image/png" href="img/A2 LOGO.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reg.css">
         <style>
             .ri{
                 height:100%;
@@ -10,10 +12,10 @@
             }
             .ya{
                 height:auto;
-                width:35%;
-                margin:5%;
+                width:90%;
+                margin:4%;
                 margin-top: 2%;
-                margin-left: 30%;
+                margin-left:5%;
                 box-shadow: 2px 4px 6px 6px lightgrey;
                 border-radius: 20px;
                 padding-bottom: 2%;
@@ -80,11 +82,44 @@
             button:hover{
                 background-color: darkgray;
             }
+            #a1{
+                height:140px;
+                width:140px;
+                margin-top: 3%;
+                border-radius: 50%;
+            }
+            @media screen and(max-width:900px) {
+    .ri{
+        height:80%;
+        padding-bottom: 40px;
+        padding:0;
+        width:100%;
+    }
+   
+    
+    .ya{
+        height:80%;
+        width:100%;
+        padding-bottom: 40px;
+    }
+    input[type="text"],input[type="password"]
+    {
+        height:40px;
+        width:100px;
+        margin-left: auto;
+    }
+    #aa{
+        height:40px;
+        width:80px;
+        font-size: 20px;
+    }
+    #a1{
+        height:140px;
+        width:140px;
+    }
+}
 
-               
-
-            
-
+         
         </style>
         <script>
 
@@ -92,7 +127,7 @@
         <body>
             <div class="ri">
                 <div class="ya">
-                    <center><img src="img/A2 LOGO.jpg"height="140px"width="140px" style="margin-top: 3%;border-radius: 50%;">
+                    <center><img src="img/A2 LOGO.jpg" id="a1">
                         <p>REGISTRATION</p>
                         
                         <input type="text"id="a"name="a"placeholder="Username"><br><br>
@@ -102,8 +137,7 @@
                         <input type="text"id="c"name="c"placeholder="Contact number"><br><br>
                         <input type="text"id="d"name="d"placeholder="City"><br><br>
                         
-                       
-                        <button id="ya">Register now</button><br><br>
+                        <button id="aa">Register now</button><br><br>
                         <a href="login.html">Already have an account</a>
 
                         

@@ -1,18 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
-        
     <head>
         <meta charset="utf-8">
-        <title>A2 service point</title>
-        <link rel="stylesheet" href="css/style1.css" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <title>A2 SERVICE POINT</title>
+        <link rel="icon" type="image/png" href="img/A2 LOGO.jpg">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
 
         <!-- Google Web Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
@@ -32,20 +31,62 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/style1.css" rel="stylesheet">
+        <link href="css/style2.css" rel="stylesheet">
+        <style>
+            .navbar-nav a
+            {
+                color: black;
+            }
+        </style>
     </head>
+
     <body>
-    <div class="a2">
-        <img src="img/A2 LOGO.jpg"><b>A2 Service Point</b>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <!--<li><a href="">Pages</a></li>-->
-            <li><a href="contact.html">Contacts us</a></li>
-            <li><input type="button" value="Get Started" ></li>
-        </ul>
-    </div>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"><img src="img/A2 LOGO.jpg" style="border-radius: 50%;"> A2 Service Point</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link text-warning ">Home</a>
+                        <a href="about.html" class="nav-item nav-link text-warning">About</a>
+                        <a href="service.html" class="nav-item nav-link text-warning">Services</a>
+                        <a href="blog.html" class="nav-item nav-link text-warning">Blogs</a>
+                      <!--- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Pages</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Our Features</a>
+                                <a href="team.html" class="dropdown-item">Our team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="offer.html" class="dropdown-item">Our offer</a>
+                                <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>--> 
+                        <a href="contact.html" class="nav-item nav-link text-warning">Contact Us</a>
+                    </div>
+                    <a href="register.html" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0" id="get">Get Started</a>
+                </div>
+            </nav>
+            <br><br><br><br>
     <!--
         <h1 id="bbb">DIGITAL MARKETING</h1>
         <div class="dig">
@@ -58,24 +99,21 @@
         </ul>
             <p id="aaa">Unlike so many other agencies that use glitz and glamor to close sales and then fail to execute, we focus on client relationships and results. We always deliver substance, not false promises, ensuring we maximize your budget, so you get the most return on investment (ROI).
             </p-->
-            <div class="a1"><img src="img/WEB DESING.webp" width="100%" height="100%"></div>
+            <div class="a1"><img src="img/WEB DESING.webp" id="img1" width="100%" height="100%"></div>
             
-            <h1 id="bbb">WEB DESING & DEVELOPMENT</h1>
-            <div class="row3">
-                <div class="col2">
+            <h1 id="bbb">WEB DESIGN & DEVELOPMENT</h1>
+            <div class="row4">
+                <div class="col3">
                     <img src="img/web-design.avif" id="event">
                 </div>
-                <div class="col2" >
+                <div class="col3" >
                     <p id="aaa">Our website design and development services provide a seamless and engaging online presence for your business and services. With our expertise in user-centric design and cutting-edge development technologies, we create visually appealing and functional websites that drive traffic and conversions.</p>
-                        
-                        <p id="b2">are so many ways to create a website. But we have a method to create a premium website at everyone’s budget.</p>
-                        <p id="b2">We have readily defined budget friendly packages.</p>
-                        <p id="b2">For Large enterprises and Institutions, We create custom solutions based on need.</p>
-                        <p id="b2">Web design involves creating the visual layout and aesthetics of a website, focusing on user experience, graphics, and overall look. Front-end development, on the other hand, involves implementing the design into a functional website using coding languages like HTML, CSS, and JavaScript.</p>
+                        <p id="aaa">There are so many ways to create a website. But we have a method to create a premium website at everyone’s budget.We have readily defined budget friendly packages.</p>
+                        <p id="aaa">For Large enterprises and Institutions, We create custom solutions based on need. Web design involves creating the visual layout and aesthetics of a website, focusing on user experience, graphics, and overall look. Front-end development, on the other hand, involves implementing the design into a functional website using coding languages like HTML, CSS, and JavaScript.</p>
                     </ul>
-
                 </div>
             </div>
+            <br>
                 <!---
                 <h1 id="bbb">LAB SETUP & MAINTENANCE</h1>
             <center><img src="img/LAB.jpg"></center>
@@ -172,7 +210,7 @@
                             <div class="col-md-6 col-lg-6 col-xl-3">
                                 <div class="footer-item">
                                     <h4 class="text-white mb-4">Contact info</h4>
-                                    <p>#31/3,Sannathi street,<br>First floor,vairam complex,<br>Jayankondam,Ariyalur-Dt.<br>Pin-621802</p>
+                                    <p>#31/4,Sannathi street,<br>First floor,vairam complex,<br>Jayankondam,Ariyalur-Dt.<br>Pin-621802</p>
                                    
                                 </div>
                             </div>
@@ -186,9 +224,9 @@
                                     
                                     <p></p>
                                     <div class="d-flex align-items-center">
-                                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.facebook.com/profile.php?id=61564713848888"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.facebook.com/share/19sn7cLaRK"><i class="fab fa-facebook-f text-white"></i></a>
                                                 <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.youtube.com/@LIFE_A_STEP_AHEAD"><i class="fa-brands fa-youtube text-white"></i></a>
-                                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.instagram.com/life.astepahead/"><i class="fab fa-instagram text-white"></i></a>
+                                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.instagram.com/a2_service_point?igsh=MWM1a2NpM2UzbjVtYw%3D%3D"><i class="fab fa-instagram text-white"></i></a>
                                     </div>
                                    
                                     </div>
